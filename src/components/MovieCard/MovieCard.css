@@ -1,0 +1,153 @@
+.movie-card {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+}
+
+.movie-card__image img {
+  width: 100%;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 0px;
+}
+
+.movie-card__image {
+  grid-row: 1 / span 2;
+}
+
+.movie-card__info {
+  padding: 16px 16px 0 16px;
+}
+
+.movie-card__description {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 50%;
+  gap: 8px;
+  padding: 0 16px 16px 16px;
+}
+
+.movie-card__title {
+  font-size: 20px;
+}
+
+.movie-card__date {
+  color: rgba(130, 126, 126, 1);
+}
+
+.movie-card__genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.movie-card__genre {
+  background: rgba(250, 250, 250, 1);
+  padding: 1px 5px;
+  border: 1px solid rgba(217, 217, 217, 1);
+  border-radius: 3px;
+}
+
+.movie-card__overview {
+  display: flex;
+  flex: 1 0 0;
+}
+
+.movie-card__average-rating {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
+  background: #fff;
+}
+
+@media (max-width: 1110px) {
+  .movie-card {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .movie-card__image img {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .movie-card__info {
+    padding: 8px 8px 0 8px;
+  }
+
+  .movie-card__description {
+    padding: 0px 8px 8px 8px;
+  }
+}
+
+@media (max-width: 760px) {
+  .movie-card {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+  }
+
+  .movie-card__image img {
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 0px;
+  }
+
+  .movie-card__image {
+    grid-row: 1 / span 2;
+  }
+
+  .movie-card__info {
+    padding: 8px 8px 0 8px;
+  }
+
+  .movie-card__description {
+    padding: 0px 8px 8px 8px;
+  }
+}
+
+@media (max-width: 580px) {
+  .movie-card {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .movie-card__image {
+    grid-row: 1;
+  }
+
+  .movie-card__info {
+    grid-row: 1;
+    padding: 0;
+  }
+
+  .movie-card__description {
+    grid-column: 1 / span 2;
+    padding: 0;
+  }
+
+  .movie-card__image img {
+    width: 60px;
+    border-radius: 2px;
+  }
+
+  .movie-card__title {
+    grid-column: 2;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+}

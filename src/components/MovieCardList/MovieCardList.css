@@ -1,0 +1,33 @@
+.movie-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.movie-card-list__item {
+  flex: 0 1 calc(50% - 12px);
+}
+
+@media (max-width: 1110px) {
+  .movie-card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .movie-card-list__item {
+    flex: 0 1 calc(33.333% - 8px);
+  }
+}
+
+@media (max-width: 760px) {
+  .movie-card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .movie-card-list__item {
+    flex: 0 1 100%;
+  }
+}
