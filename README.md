@@ -1,1 +1,1 @@
-https://movies-app-mauve-beta.vercel.app/
+https://movies-app-akosten56.vercel.app/
